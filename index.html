@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien pour la police d'écriture -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </head>
+
+<body>
+  <!-- Bouton pour remonter -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- Menu de navigation -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#home">Portfolio.</a></div>
+      <ul class="menu">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#services">Veille technologique</a></li>
+          <li><a href="#certif">Certification</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/Maks_Y_"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+<!-- Section accueil -->
+ <section class="home" id="home">
+   <div class="home-content">
+     <div class="text">
+       <div class="text-one">Bonjour,</div>
+       <div class="text-two">Bienvenue sur mon portfolio</div>
+       <div class="text-three">Maksymilian Pomorzewski</div>
+       <div class="text-four">Etudiant</div>
+     </div>
+   </div>
+ </section>
+
+<!-- Section à propos -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>A propos</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/photoTest.png" alt="">
+        </div>
+        <div class="right">
+          <div class="topic">Présentation</div>
+          <p>Je suis actuellement étudiant au lycée polyvalent de Cachan en BTS SIO (Services Informatiques aux Organisations) dans l'option SLAM (Solutions Logicielles et Application Métier)</p>
+          <a href="Documents/CV_Maks.pdf" download>
+            <div class="button">
+              <button>Télècharger le CV</button>
+            </div>
+          </a> 
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section mon parcours -->
+<section class="parcours" id="parcours">
+  <div class="content">
+    <div class="title"><span>Mon parcours scolaire</span></div>
+    <div class="text">
+    <div class="boxes">
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">BTS SIO Option SLAM</div>
+      <p>2021-2023</p>
+      <p>Lycée polyvalent de Cachan</p>
+      <p>BTS SIO en cours d'obtention</p>
+    </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">BAC STI2D</div>
+      <p>2018-2021</p>
+      <p>Lycée polyvalent Jean Macé</p>
+      <p>Obtention du BAC STI2D mention bien</p>
+    </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">Brevet</div>
+      <p>2014-2018</p>
+      <p>Collège Jean Perrin</p>
+      <p>Obtention du Brevet</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="content">
+    <div class="title"><span>Mon parcours professionnel</span></div>
+    <div class="text">
+    <div class="boxes">
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">Stage de 1ère année</div>
+      <p>mai 2022 - juin 2022</p>
+      <p>Service Informatique de la mairie d'Oświęcim (Pologne)</p>
+    </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">Stage de 2ème année</div>
+      <p>janvier 2023 - mars 2023</p>
+      <p>Développeur Web Full Stack</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="title"><span>Mes projets</span></div>
+  <br><br>
+
+
+
+
+
+<!-- Création du carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Balise du carousel -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/projet1.png" alt="Image 1">
+      <div class="carousel-caption">
+        <h3>Projet 1</h3>
+        <p>Site de vente de bonbon</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/projet2.png" alt="Image 2">
+      <div class="carousel-caption">
+        <h3>Projet 2</h3>
+        <p>Interface graphique du site SicilyLines en C#</p>
+        <a href="https://github.com/MaksY18/Mission2_SicilyLines" target="_blank">Lien GitHub</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/photoTest.png" alt="Image 3">
+      <div class="carousel-caption">
+        <h3>Projet 3</h3>
+        <p>Développement Web du site SicilyLines en Symfony</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/projet4.png" alt="Image 4">
+      <div class="carousel-caption">
+        <h3>Projet 4</h3>
+        <p>Développement d'une application mobile SicilyLines sur Android</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/projet5.png" alt="Image 5">
+      <div class="carousel-caption">
+        <h3>Projet 5</h3>
+        <p>Développement Web (full stack) d'un site de vente en HTML|PHP</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Fleches de navigation gauche/droite -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</section>
+<!-- Section mes compétences -->
+<!-- Panneaux d'affichage veille + compétences -->
+<section class="skills" id="skills">
+ <div class="content">
+   <div class="title"><span>Mes compétences</span></div>
+   <div class="skills-details">
+     <div class="text">
+       <div class="topic">Résumé</div>
+       <p>A compléter</p>
+       <div class="experience">
+         <div class="num">2</div>
+         <div class="exp">Années <br> d'expérience</div>
+       </div>
+     </div>
+     <div class="boxes">
+       <div class="box">
+         <div class="topic">HTML</div>
+         <div class="per">.</div>
+       </div>
+       <div class="box">
+         <div class="topic">CSS</div>
+         <div class="per">.</div>
+       </div>
+       <div class="box">
+         <div class="topic">Java Script</div>
+         <div class="per">.</div>
+       </div>
+       <div class="box">
+         <div class="topic">C#</div>
+         <div class="per">.</div>
+       </div>
+       <div class="box">
+        <div class="topic">MySQL</div>
+        <div class="per">.</div>
+      </div>
+      <div class="box">
+        <div class="topic">PHP</div>
+        <div class="per">.</div>
+      </div>
+      <div class="box">
+        <div class="topic">Python</div>
+        <div class="per">.</div>
+      </div>
+      <div class="box">
+        <div class="topic">WordPress</div>
+        <div class="per">.</div>
+      </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- Section veille technologique -->
+ <section class="services" id="services">
+   <div class="content">
+     <div class="title"><span>Veille technologique</span></div>
+
+     <div class="text">
+      <div class="topic">Qu'est-ce que la veille technologique ?</div>
+      <p>La veille technologique consiste à surveiller les évolutions techniques et les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc….</p>
+      </div>
+      <br>
+      <div class="topic">Les principaux outils de ma veille</div>
+      <p>* Feedly</p>
+      <p>* Twitter</p>
+      <p>* Google Actualités</p>
+      <p>* Google Alerts</p>
+      <br>
+      <div class="topic">Sujet de ma veille</div>
+      <p>L’utilisation de l’intelligence artificielle dans la cybersécurité.</p>
+      <br>
+
+     <div class="boxes">
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Lancement en Belgique de “ADA” une intelligence artificielle qui va contribuer à améliorer la cybersécurité</div>
+       <p>07 mars 2022</p>
+       <p>L’entreprise belge Proximus lance son intelligence artificielle “ADA” qui peut prédire des erreurs dans les systèmes techniques et améliorer la détection de fraudes. L’intelligence devrait, selon les chiffres cités par Proximus, contribuer pour environ 14.000 milliards d’euros à l’économie mondiale, d’ici à 2030. En Belgique, cela représenterait une contribution de 330 millions d’euros à l’horizon 2024, selon Proximus.</p>
+       <a href="https://www.rtbf.be/article/proximus-lance-ada-pour-miser-sur-lintelligence-artificielle-et-la-cybersecurite-10949628" target="_blank">Cliquez pour voir l'article</a>
+     </div>
+
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Comment les Jeux Olympiques de Paris 2024 se préparent avec l'aide des IA</div>
+       <p>21 septembre 2022</p>
+       <p>Des intelligences artificielles vont être utilisées avant et pendant les JO de Paris 2024. Elles serviront principalement à anticiper des attaques, détecter des failles ou encore trouver des activités suspectes comme l’achat de nom de domaine à des fins d'hameçonnage.</p>
+       <a href="https://www.usine-digitale.fr/article/cybersecurite-comment-les-jeux-olympiques-de-paris-2024-se-preparent.N2058662" target="_blank">Cliquez pour voir l'article</a>
+     </div>
+
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Le gouvernement soutient plusieurs projets lié à l’IA pour développer la cybersécurité en France</div>
+       <p>31 octobre 2022</p>
+       <p>Le ministre délégué chargé de la Transition numérique et des Télécommunications annonce 39 millions d’euros de financements publics pour soutenir plusieurs projets exploitant l’IA dans le cadre de la stratégie nationale d’accélération pour la cybersécurité.</p>
+       <a href="https://www.larevuedudigital.com/le-gouvernement-soutient-17-projets-pour-faire-de-la-france-un-champion-en-cybersecurite/" target="_blank">Cliquez pour voir l'article</a>
+     </div>
+
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Cybersécurité, comment lutter efficacement grâce à l’intelligence artificielle</div>
+       <p>21 novembre 2022</p>
+       <p>Le magazine Forbes résume les possibles utilisation d’une IA en cybersécurité pour lutter efficacement face aux menaces de plus en plus présentes.</p>
+       <a href="https://www.forbes.fr/technologie/cybersecurite-ou-comment-lutter-efficacement-grace-a-lintelligence-artificielle/" target="_blank">Cliquez pour voir l'article</a>
+     </div>
+
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Custocy lance un logiciel basé sur des IA permettant de stopper les attaques sur les réseaux</div>
+       <p>13 janvier 2023</p>
+       <p>L’éditeur de logiciel Custocy a développé un logiciel basé sur plusieurs IA qui peut permettre de stopper une attaque en direct et détecter des intrus sur le réseau d’une entreprise.</p>
+       <a href="https://www.latribune.fr/partenaires/latribunebusiness/latribunebusiness-tv/cybersecurite-quand-l-ia-detecte-et-stoppe-les-intrusions-reseau-947053.html" target="_blank">Cliquez pour voir l'article</a>
+     </div>
+
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Microsoft Security Copilot, une IA de cybersécurité basée sur ChatGPT</div>
+       <p>29 mars 2023</p>
+       <p>Lancement de Microsoft Security Copilot, un assistant pour les professionnels de la cybersécurité. On peut l'utiliser pour différentes requêtes comme trouver des vulnérabilités en les classant par ordre d’importance ou demander des conseils en cybersécurité. L’IA a été créée sur la base de ChatGPT en collaboration avec OpenIA.</p>
+       <a href="https://www.blogdumoderateur.com/microsoft-lance-security-copilot-assistant-ia-cybersecurite/" target="_blank">Cliquez pour voir l'article</a>
+     </div>
+   </div>
+   </div>
+ </section>
+
+<!-- Section certification -->
+<section class="certif" id="certif">
+  <div class="content">
+    <div class="title"><span>Mes certifications</span></div>
+    <div class="text">
+    <div class="boxes">
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">CNIL</div>
+      <p>2022</p>
+      <p>Certification de cybersécurité</p>
+    </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+      </div>
+      <div class="topic">PIX</div>
+      <p>2023</p>
+      <p>Certification PIX</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Section contact -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact</span></div>
+      <div class="text">
+        <div class="topic">Des questions ?</div>
+        <p>Adresse mail : makspomo8@gmail.com</p>
+        <p>Télèphone : 06 65 39 50 38</p>
+        <p>Message privé Twitter</p>
+        <a href = "mailto: makspomo8@gmail.com">
+          <div class="button">
+            <button>Envoyer un mail</button>
+          </div>
+        </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="text">
+    <span> </span>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
